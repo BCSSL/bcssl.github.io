@@ -1,0 +1,138 @@
+/*
+
+--- Pallette ---
+Main: rgb(86, 159, 99)
+Dark: rgb(36, 108, 49)
+bright: rgb(110, 135, 45)
+Light: rgb(164, 216, 173)
+White: rgb(226, 251, 230)
+Darkest: rgb(5, 44, 12)
+Yellow: rgb(244, 235, 90)
+Dark Yellow: rgb(226, 214, 43);
+*/
+
+:root {
+    --color-main: rgb(86, 159, 99);
+    --color-dark: rgb(36, 108, 49);
+    --color-bright: rgb(77, 103, 10);
+    --color-light: rgb(183, 206, 177);
+    --color-white: rgb(226, 251, 230);
+    --color-darkest: rgb(5, 44, 12);
+    --color-black: rgb(0, 0, 0);
+    --color-yellow: rgb(244, 235, 90);
+    --color-dark-yellow: rgb(226, 214, 43);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* Fix font size using user's browser setting */
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Mukta", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color-darkest);
+    /* Only works when there's nothing positioned absolute in relation to body */
+    overflow-x: hidden;
+    background-color: var(--color-main);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    max-width: 130rem;
+    padding: 0 2.4rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 7.2rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+.heading {
+    text-transform: capitalize;
+    padding-bottom: 3.6rem;
+    font-weight: 600;
+}
+
+.error--heading {
+    padding-top: 3.2rem;
+}
+
+.subheading {
+    display: block;
+
+    font-weight: 700;
+    letter-spacing: 0.8rem;
+    color: var(--color-dark-yellow);
+    text-transform: uppercase;
+
+    padding: 3.6rem 0 1.2rem 0.4rem;
+}
+
+/* Grids */
+.grid {
+    display: grid;
+}
+
+.grid--col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* Margins */
+.margin-top-high {
+    margin-top: 9.6rem;
+}
+
+.margin-top-medium {
+    margin-top: 6.4rem;
+}
+
+.margin-top-low {
+    margin-top: 3.2rem;
+}
+
+.margin-bottom-high {
+    margin-bottom: 9.6rem;
+}
+
+.margin-bottom-medium {
+    margin-bottom: 6.4rem;
+}
+
+.margin-bottom-low {
+    margin-bottom: 3.2rem;
+}

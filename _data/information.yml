@@ -1,0 +1,9 @@
+- name: Email
+  link: "mailto:info&commat;bcssl&period;lk"
+  logo: ph ph-envelope-simple
+  text: info&commat;bcssl&period;lk
+
+- name: Phone
+  link: "tel:+94774232400"
+  logo: ph ph-phone
+  text: +94 77 42 32 400

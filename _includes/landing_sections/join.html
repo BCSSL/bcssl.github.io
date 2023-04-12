@@ -1,0 +1,69 @@
+<section class="join container margin-top-high margin-bottom-high" id="join">
+    <span class="join--subheading subheading">Join US</span>
+    <h2 class="join--heading heading">Become a BCSSL <span class="highlight">Member</span></h2>
+
+    <div class="join--description container">
+        <p class="join--description-text">
+            BCSSL membership offers exclusive benefits to its members. There are multiple membership categories to
+            choose from.
+        </p>
+    </div>
+    <form class="join--form margin-top-medium grid grid--col-2" action="#">
+        <div class="join--form-group">
+            <label for="join--form-name" class="join--form-label">Name of applicant</label>
+            <input type="text" id="join--form-name" class="join--form-input" placeholder="Saman Kumara" required />
+        </div>
+        <div class="join--form-group">
+            <label for="join--form-date-of-birth" class="join--form-label">Date of birth</label>
+            <input type="date" id="join--form-date-of-birth" class="join--form-input" required />
+        </div>
+        <div class="join--form-group">
+            <label for="join--form-gender" class="join--form-label">Gender</label>
+            <div class="join--form-input join--form-radio-btn-group">
+                <div class="join-form-radio-btn radio-btn">
+                    <input name="gender" type="radio" id="join--form-gender-option-female"
+                        class="radio-btn--option" value="female" required />
+                    <label for="join--form-gender-option-female" class="radio--label">Female</label>
+                </div>
+
+                <div class="join-form-radio-btn radio-btn">
+                    <input name="gender" type="radio" id="join--form-gender-option-male"
+                        class="radio-btn--option" value="male" required />
+                    <label for="join--form-gender-option-male" class="radio--label">Male</label>
+                </div>
+
+                <div class="join-form-radio-btn radio-btn">
+                    <input name="gender" type="radio" id="join--form-gender-option-other"
+                        class="radio-btn--option" value="other" required />
+                    <label for="join--form-gender-option-other" class="radio--label">Other</label>
+                </div>
+            </div>
+        </div>
+        <div class="join--form-group">
+            <label for="join--form-nic" class="join--form-label">NIC Number</label>
+            <input type="number" id="join--form-nic" class="join--form-input" placeholder="101234567v" />
+        </div>
+        <div class="join--form-group">
+            <label for="join--form-phone" class="join--form-label">Contact Number</label>
+            <input type="tel" id="join--form-phone" class="join--form-input" placeholder="012 3 456 789" />
+        </div>
+        <div class="join--form-group">
+            <label for="join--form-email" class="join--form-label">Email Address</label>
+            <input type="email" id="join--form-email" class="join--form-input" placeholder="me@sample.com" required />
+        </div>
+        <div class="join--form-group">
+            <label for="join--form-category" class="join--form-label">Membership Category</label>
+            <select id="join--form-category" class="join--form-input" required>
+                <option value="">Please select an option</option>
+                <option value="individual">General membership</option>
+                <option value="organization">Long term membership</option>
+                <option value="organization">School membership</option>
+                <option value="organization">General overseas membership</option>
+                <option value="organization">Long-term overseas membership</option>
+            </select>
+        </div>
+        <div class="join--form-group">
+            <button class="btn btn--primary btn--form">Submit</button>
+        </div>
+    </form>
+</section>

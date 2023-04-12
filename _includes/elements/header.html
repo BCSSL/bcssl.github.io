@@ -1,0 +1,19 @@
+<header class="header">
+    <section class="section--header">
+        <div class="logo">
+            <a href="/"><img src="/assets/images/logos/logo-with-text.webp" alt="BCSSL Logo" /></a>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                {% for nav_page in site.data.navigation %}
+                <li>
+                    <a href="{{ nav_page.link }}"
+                        class="main-nav-link {% if page.url == nav_page.link %}current{% endif %}">
+                        {{ nav_page.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </section>
+</header>
