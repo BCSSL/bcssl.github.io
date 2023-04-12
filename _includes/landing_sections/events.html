@@ -1,0 +1,11 @@
+<section class="events margin-top-high" id="events">
+    <div class="container events--contents">
+        <span class="subheading">What we Do</span>
+        <h2 class="events--heading heading">BCSSL Conducts Many <span class="highlight">Events</span></h2>
+        <div class="events--options grid grid--col-4">
+            {% for item in site.data.what_we_do %}
+            {% include elements/card.html links=item %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

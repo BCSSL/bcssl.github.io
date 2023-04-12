@@ -1,0 +1,11 @@
+- name: Butterfly Interest Group
+  link: https://www.facebook.com/groups/153339521374784/
+  icon: ph ph-users-four
+
+- name: Sri Lankan Butterflies
+  link: https://slbutterflies.lk/
+  icon: ph ph-butterfly
+
+- name: Moths of Sri Lanka
+  link: https://www.inaturalist.org/projects/moths-of-sri-lanka/
+  icon: ph ph-bug-beetle

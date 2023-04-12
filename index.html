@@ -1,0 +1,10 @@
+---
+layout: default
+title: Welcome to BCSSL
+---
+
+{% for item in site.data.landing_sections %}
+
+{% include landing_sections/{{item.name}}.html %}
+
+{% endfor %}

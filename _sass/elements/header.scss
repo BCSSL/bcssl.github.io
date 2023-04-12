@@ -1,0 +1,43 @@
+.header {
+    padding: 1.8rem 4.8rem 1.8rem 4.8rem;
+    background-color: var(--color-light);
+}
+
+.section--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20rem;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+    height: 7.4rem;
+}
+
+.main-nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--color-dark);
+}
+
+
+
+.current {
+    color: var(--color-dark) !important;
+}

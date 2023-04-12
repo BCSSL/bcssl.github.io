@@ -1,0 +1,15 @@
+- name: Lectures
+  image: /assets/images/what-we-do/lectures.webp
+  description: "BCSSL conducts monthly lectures on topics related to Butterflies and other insects"
+
+- name: Field Trips
+  image: /assets/images/what-we-do/field-trips.webp
+  description: "BCSSL conducts field trips to observe Butterflies and other insects"
+
+- name: Competitions
+  image: /assets/images/what-we-do/events.webp
+  description: "BCSSL conducts various competitions to increase awareness in general public"
+
+- name: Publications
+  image: /assets/images/what-we-do/publications.webp
+  description: "BCSSL has many publications related to Butterflies and bio-diversity"

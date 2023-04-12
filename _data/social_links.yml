@@ -1,0 +1,23 @@
+- name: Facebook
+  url: https://facebook.com/butterflycssl
+  icon: ph ph-facebook-logo
+
+- name: Instagram
+  url: https://instagram.com/butterflycssl
+  icon: ph ph-instagram-logo
+
+- name: YouTube
+  url: https://youtube.com/butterflycssl
+  icon: ph ph-youtube-logo
+
+- name: Twitter
+  url: https://twitter.com/butterflycssl
+  icon: ph ph-twitter-logo
+
+- name: LinkedIn
+  url: https://linkedin.com/company/butterflycssl
+  icon: ph ph-linkedin-logo
+
+- name: TikTok
+  url: https://tiktok.com/@butterflycssl
+  icon: ph ph-tiktok-logo

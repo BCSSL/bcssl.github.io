@@ -1,0 +1,56 @@
+<footer class="footer margin-top-high">
+    <div class="footer--logo">
+        <img
+            class="footer--logo-image"
+            src="/assets/images/logos/logo-without-text.webp"
+            alt="BCSSL Logo"
+        />
+        <h3 class="footer--logo-text">
+            Butterfly Conservation Society of Sri Lanka
+        </h3>
+    </div>
+    <div class="footer--sections grid grid--col-3">
+        <div class="footer--section">
+            <h4 class="footer--section-title">Contact Us</h4>
+            <ul class="footer--info-links">
+                {% for item in site.data.information %}
+                <li class="footer--section-list-item">
+                    <i class="{{ item.logo }}"></i>
+                    <a href="{{ item.link }}" class="footer--section-link">{{ item.text }}</a>
+                </li>
+                {% endfor %}
+                <li class="footer--section-list-item footer--address">
+                    <i class="ph ph-map-pin"></i>
+                    <p class="footer--section-link">
+                        762/a, Yatihena, Malwana. Sri Lanka.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer--section">
+            <h4 class="footer--section-title">Follow Us</h4>
+            <ul class="footer--social-links grid grid--col-2">
+                {% for item in site.data.social_links %}
+                {% assign remainder = forloop.index | modulo: 2 %}
+                <li class="footer--section-list-item column-{{ remainder - 1 }}">
+                    <i class="{{ item.icon }}"></i>
+                    <a href="{{ item.url }}" class="footer--section-link" target="_blank">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+        </div>
+        <div class="footer--section">
+            <h4 class="footer--section-title">Resources</h4>
+            <ul class="footer--resource-links">
+                {% for item in site.data.resources %}
+                <li class="footer--section-list-item">
+                    <i class="{{ item.icon }}"></i>
+                    <a href="{{ item.url }}" class="footer--section-link">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+        </div>
+    </div>
+    <p class="footer--copyright-text">
+        Copyright &COPY; 2013-{{ site.time | date: '%Y' }} Butterfly
+        Conservation Society of Sri Lanka. All rights reserved.
+    </p>
+</footer>
