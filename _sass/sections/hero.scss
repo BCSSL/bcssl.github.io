@@ -22,7 +22,6 @@
 
 .hero--content {
     padding: 3.2rem 4.8rem 4.8rem;
-    max-width: 130rem;
 }
 
 .hero--heading {
@@ -35,16 +34,16 @@
     font-family: "Alkatra", sans-serif;
 }
 
+.hero--content {
+    max-width: 130rem;
+}
+
 .hero--description-text {
     font-weight: 500;
     color: var(--color-darkest);
     padding-bottom: 3.6rem;
     line-height: 1.7;
     letter-spacing: 0.2rem;
-}
-
-.hero--img {
-    display: none;
 }
 
 .hero--buttons {
