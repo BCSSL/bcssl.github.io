@@ -82,6 +82,11 @@
         font-size: 4.8rem;
     }
 
+    .events--options {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2.4rem;
+    }
+
     .card {
         margin: 0 3.2rem;
     }
