@@ -21,20 +21,20 @@
             <label for="join--form-gender" class="join--form-label">Gender</label>
             <div class="join--form-input join--form-radio-btn-group">
                 <div class="join-form-radio-btn radio-btn">
-                    <input name="gender" type="radio" id="join--form-gender-option-female"
-                        class="radio-btn--option" value="female" required />
+                    <input name="gender" type="radio" id="join--form-gender-option-female" class="radio-btn--option"
+                        value="female" required />
                     <label for="join--form-gender-option-female" class="radio--label">Female</label>
                 </div>
 
                 <div class="join-form-radio-btn radio-btn">
-                    <input name="gender" type="radio" id="join--form-gender-option-male"
-                        class="radio-btn--option" value="male" required />
+                    <input name="gender" type="radio" id="join--form-gender-option-male" class="radio-btn--option"
+                        value="male" required />
                     <label for="join--form-gender-option-male" class="radio--label">Male</label>
                 </div>
 
                 <div class="join-form-radio-btn radio-btn">
-                    <input name="gender" type="radio" id="join--form-gender-option-other"
-                        class="radio-btn--option" value="other" required />
+                    <input name="gender" type="radio" id="join--form-gender-option-other" class="radio-btn--option"
+                        value="other" required />
                     <label for="join--form-gender-option-other" class="radio--label">Other</label>
                 </div>
             </div>
@@ -63,7 +63,15 @@
             </select>
         </div>
         <div class="join--form-group">
-            <button class="btn btn--primary btn--form">Submit</button>
+            <label for="join--form-payment" class="join--form-label">Payment Receipt</label>
+            <input type="file" class="btn btn-secondarybtn--form">
+        </div>
+        <div class="join--form-group">
+            <div class="g-recaptcha" data-sitekey="6LecJYklAAAAAFmCUHBablW7vCHpOXUsJNm5T7_B"></div>
+            <br />
+        </div>
+        <div class="join--form-group">
+            <button type="submit" class="btn btn--primary btn--form">Submit</button>
         </div>
     </form>
 </section>
