@@ -7,7 +7,8 @@
             <ul class="main-nav-list">
                 {% for nav_page in site.data.navigation %}
                 <li>
-                    <a href="{{ nav_page.link }}" class="main-nav-link">
+                    <a href="{{ nav_page.link }}"
+                        class="main-nav-link {% if page.url == nav_page.link %}current{% endif %}">
                         {{ nav_page.name }}
                     </a>
                 </li>

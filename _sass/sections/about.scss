@@ -1,6 +1,4 @@
 .about--contents {
-    display: flex;
-    flex-direction: column;
     gap: 1.2rem;
     justify-items: center;
     align-items: center;
@@ -8,31 +6,6 @@
 
 .about--heading {
     color: var(--color-white);
-}
-
-.about-images {
-    border: 0.6rem solid var(--color-light);
-    border-radius: 1.4rem;
-}
-
-.about--image-img {
-    border-radius: 1.4rem 0 0 1.4rem;
-    object-fit: cover;
-    width: 100%;
-}
-
-.about--volunteers {
-    display: flex;
-}
-
-.about--volunteer-img {
-    width: 4.8rem;
-    height: 4.8rem;
-
-    border-radius: 50%;
-    border: 0.2rem solid var(--color-light);
-
-    margin-right: -1.6rem;
 }
 
 .about--description {
@@ -68,3 +41,5 @@
 .about--btn:active {
     color: var(--color-yellow);
 }
+
+
