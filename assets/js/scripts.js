@@ -37,5 +37,9 @@ allLinks.forEach((link) => {
 });
 
 /* Sticky Navigation */
+
+// Calculate the height of the navigation
 const navigationHeight = document.querySelector(".header").offsetHeight;
-document.documentElement.style.setProperty("--scroll-padding", navigationHeight + "px");
+
+// Add 1 to the navigation height to avoid the navigation to be stuck and add the px unit
+document.documentElement.style.setProperty("--scroll-padding", navigationHeight + 1 + "px"); 
