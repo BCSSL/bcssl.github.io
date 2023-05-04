@@ -16,12 +16,14 @@
     max-width: 100rem;
     display: flex;
     flex-direction: column;
+    justify-items: center;
     gap: 1.2rem;
 }
 
 .join--form-input {
     font-size: 1.8rem;
     color: var(--color-darkest);
+    background-color: var(--color-white);
 
     padding: 1.2rem;
     border: none;
@@ -31,4 +33,8 @@
 .join--form-radio-btn-group {
     display: flex;
     gap: 6.4rem;
+}
+
+.btn--form {
+    padding: 0.2rem !important;
 }

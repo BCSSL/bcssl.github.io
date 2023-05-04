@@ -1,4 +1,6 @@
 .about--contents {
+    display: flex;
+    flex-direction: column;
     gap: 1.2rem;
     justify-items: center;
     align-items: center;
@@ -22,6 +24,19 @@
     padding-bottom: 3.6rem;
     line-height: 1.7;
     letter-spacing: 0.2rem;
+}
+
+.about--volunteers-thumbnails {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.about--volunteer-thumbnail-image {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 1px solid var(--color-light);
 }
 
 .about--btn {

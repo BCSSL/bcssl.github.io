@@ -12,15 +12,15 @@ Dark Yellow: rgb(226, 214, 43);
 */
 
 :root {
-    --color-main: rgb(86, 159, 99);
-    --color-dark: rgb(36, 108, 49);
-    --color-bright: rgb(77, 103, 10);
-    --color-light: rgb(183, 206, 177);
-    --color-white: rgb(226, 251, 230);
-    --color-darkest: rgb(5, 44, 12);
-    --color-black: rgb(0, 0, 0);
-    --color-yellow: rgb(244, 235, 90);
-    --color-dark-yellow: rgb(226, 214, 43);
+    --color-main: #569f63;
+    --color-dark: #3c6f45;
+    --color-darkest: #112014;
+    --color-bright: #78b282;
+    --color-light: #9ac5a1;
+    --color-white: #cce2d0;
+    --color-black: #09100a;
+    --color-yellow: #f4eb5a;
+    --color-dark-yellow: #e2d62b;
 }
 
 * {
@@ -34,6 +34,7 @@ html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 9.6rem);
 }
 
 body {
@@ -54,8 +55,6 @@ body {
 }
 
 .container {
-    align-items: center;
-    justify-content: center;
     max-width: 130rem;
     padding: 0 2.4rem;
     margin: 0 auto;
