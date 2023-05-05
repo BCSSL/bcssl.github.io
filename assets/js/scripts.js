@@ -42,4 +42,12 @@ allLinks.forEach((link) => {
 const navigationHeight = document.querySelector(".header").offsetHeight;
 
 // Add 1 to the navigation height to avoid the navigation to be stuck and add the px unit
-document.documentElement.style.setProperty("--scroll-padding", navigationHeight + 1 + "px"); 
+document.documentElement.style.setProperty("--scroll-padding", navigationHeight + "px");
+
+const show = function (id) {
+    const memberElement = document.querySelector(".committee--container").children[id];
+    const descriptionElement = memberElement.getElementsByClassName("committee-member--information")[0];
+
+    console.log(descriptionElement);
+    descriptionElement.style.display = "block";
+}

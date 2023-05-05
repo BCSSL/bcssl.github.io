@@ -4,7 +4,14 @@
         <h2 class="events--heading heading">BCSSL Conducts Many <span class="highlight">Events</span></h2>
         <div class="events--options grid grid--col-4">
             {% for item in site.data.what_we_do %}
-            {% include elements/card.html links=item %}
+            <div class="card event--card">
+                <h3 class="card-title"> {{item.name}} </h3>
+                <img class="card--img" src="{{item.image}}" alt="BCSSL {{item.name}}">
+                <p class="card--description">
+                    {{item.description}}
+                </p>
+                <a href="{{item.url}}" class="btn btn--primary event--btn">Learn More</a>
+            </div>
             {% endfor %}
         </div>
     </div>
