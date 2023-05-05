@@ -115,7 +115,13 @@
 }
 
 .description--close-btn {
-    font-size: 1.8rem;
+    font-size: 3.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.description--close-btn:hover {
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .committee-member--description-text {
