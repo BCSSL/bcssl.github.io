@@ -45,9 +45,18 @@ const navigationHeight = document.querySelector(".header").offsetHeight;
 document.documentElement.style.setProperty("--scroll-padding", navigationHeight + "px");
 
 const show = function (id) {
+    const descriptionElement = getDescriptionElement(id);
+    descriptionElement.style.display = "flex";
+}
+
+const hide = function (id) {
+    const descriptionElement = getDescriptionElement(id);
+    descriptionElement.style.display = "none";
+}
+
+function getDescriptionElement(id) {
     const memberElement = document.querySelector(".committee--container").children[id];
     const descriptionElement = memberElement.getElementsByClassName("committee-member--information")[0];
 
-    console.log(descriptionElement);
-    descriptionElement.style.display = "block";
+    return descriptionElement;
 }

@@ -50,9 +50,10 @@ permalink: /about
                 <div class="committee-member--description">
                     <p class="committee-member--title">{{ member.title }}</p>
                     <p class="committee-member--name">{{ member.name }}</p>
-                    <a href="javascript:void(0)" onclick='show("{{ member.id }}"); return false;' class="btn
+                    <a href="javascript:void(0)" onclick='show("{{ member.id }}")' class="btn
                     btn--secondary btn--more-info">More Info</a>
                     <div class="committee-member--information">
+                        <i class="description--close-btn ph ph-x" onclick='hide("{{ member.id }}")'></i>
                         <p class="committee-member--description-text">{{ member.description }}</p>
                     </div>
                 </div>
